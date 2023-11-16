@@ -1,0 +1,129 @@
+body{
+    background-color: hsl(282, 83%, 9%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.info{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 6rem;
+}
+.info a h3{
+    color: hsl(257, 37%, 55%);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.info a h3:hover{
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+.info p{
+    color: hsl(257, 37%, 55%);
+    font-weight: 400;
+    padding: 20px;
+    font-size: 1.7rem;
+}
+.info img{
+    width: 300px;
+    opacity: 0.33;
+}
+.formulario-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    0px 0px 15px rgba(0, 0, 0, 0.450),
+    inset 0px 0px 15px rgba(0, 0, 0, 0.450);
+    border-radius: 5px;
+    margin: 6rem;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(266, 30%, 35%);
+    padding: 4.5rem;
+    border-radius: 5px;
+    overflow: auto;
+    gap: 6px;
+}
+.formulario .input{
+    padding: 8px 2px;
+    min-width: 100%;
+    border-radius: 5px;
+    color: hsl(276, 42%, 63%);
+    font-weight: 400;
+    border: none;
+    transition: 0.3s;
+    outline: none;
+}
+.formulario .input:focus{
+    border: 1px solid hsl(282, 83%, 9%);
+}
+.selecionar{
+    display: flex;
+    justify-content: space-between;
+}
+.selecionar label{
+    font-weight: 500;
+    color: hsl(282, 83%, 9%);
+    font-size: 1.2rem;
+}
+.formulario p{
+    font-weight: 500;
+    color: hsl(282, 83%, 9%);
+    font-size: 1.2rem;
+    padding-left: 2px;
+}
+.formulario .botaoEnvio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.formulario .botaoEnvio button{
+    padding: 10px 98px;
+    border-radius: 5px;
+    border: none;
+    color: hsl(266, 30%, 35%);
+    font-weight: 500;
+    transition: 0.3s;
+    border: 1px solid hsl(282, 83%, 9%);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.formulario .botaoEnvio button:hover{
+    opacity: 0.75;
+}
+.redes{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.redes a i{
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+.redes a i:hover{
+    color: hsl(276, 42%, 63%);
+    text-decoration: underline;
+}
+.aviso{
+    display: none;
+    color: hsl(282, 83%, 9%);
+    font-weight: 700;
+}

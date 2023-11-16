@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+
+    <link rel="stylesheet" href="./src/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="info">
+            <a href="#">
+                <h3>Barba branca transportes!</h3>
+            </a>
+            <p>Quer fazer parte da nossa tripulação?<br>
+                Preenche o formulário e aguarde!<br>
+                Mais informações em xx/xx/xxxx.</p>
+            <img src="./src/image/pngegg.png" alt="simbolo do bando do barba branca">
+        </div>
+
+        <form id="form" class="formulario-container">
+            <div class="formulario">
+                <div>
+                    <input class="input" type="text" name="nome" placeholder="Nome do usuário*" oninput="validateName()">
+                    <span id="aviso" class="aviso">campo obrigatorio*</span>
+                </div>
+                <div>
+                    <input class="input" type="email" name="email" placeholder="Email*" oninput="validateEmail()">
+                    <span id="aviso" class="aviso">campo obrigatorio*</span>
+                </div>
+                <div>
+                    <input class="input" pattern="[0-9]+$" type="number" name="telefone" placeholder="Telefone*" oninput="validatePhone()">
+                    <span id="aviso" class="aviso">campo obrigatorio*</span>
+                </div>
+                <div>
+                    <textarea class="input" type="text" name="mensagem" id="" cols="30" rows="8" placeholder="Mensagem*" oninput="validateText()"></textarea>
+                    <span id="aviso" class="aviso teste">campo obrigatorio*</span>
+                </div>
+
+                <div class="selecionar">
+                    <div>
+                        <input type="radio" name="sexo" id="m" value="m">
+                        <label for="m">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="f" value="f">
+                        <label for="f">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="o" value="o">
+                        <label for="o">Outro</label>
+                    </div>
+                </div>
+
+                <p>campos obrigatórios*</p>
+
+                <div class="botaoEnvio">
+                    <button type="submit" id="botao">Enviar</button>
+                </div>
+
+            </div>
+        </form>
+        <div class="redes">
+            <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="/"><i class="fa-brands fa-facebook"></i></a>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./src/validate.js"></script>
+</body>
+
+</html>
+

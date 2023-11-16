@@ -1,0 +1,36 @@
+@media(max-width: 425px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        margin: 1rem;
+    }
+    .info a h3{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .info p{
+        font-size: 1.3rem;
+    }
+    .info img{
+        width: 200px;
+    }
+    .formulario-container{
+        margin: 1rem;
+    }
+    .formulario{
+        padding: 3rem;
+    }
+    .redes{
+        bottom: -100px;
+    }
+    .redes a i{
+        border: 2px solid #ffff;
+        padding: 6px;
+        border-radius: 50%;
+    }
+    .redes a i:hover{
+        border: 2px solid hsl(276, 42%, 63%);
+    }
+}
