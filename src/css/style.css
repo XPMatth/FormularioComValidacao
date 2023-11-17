@@ -43,8 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 
-    0px 0px 15px rgba(0, 0, 0, 0.450),
-    inset 0px 0px 15px rgba(0, 0, 0, 0.450);
+    0px 0px 15px rgba(0, 0, 0, 0.450);
     border-radius: 5px;
     margin: 6rem;
 
